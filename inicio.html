@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo Kaizen Torrent - Karate Shotokan</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#57d8ff',secondary:'#ffffff'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #57d8ff;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .active-link {
+            color: #57d8ff;
+        }
+        .active-link::after {
+            width: 100%;
+        }
+
+        /* Cambiar color del texto de los campos de formulario */
+        input, textarea {
+            color: #57d8ff; /* Texto escrito */
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #57d8ff; /* Color del placeholder */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- HEADER  -->
+    <header class="w-full py-4 border-b border-gray-800 relative">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <!-- Logo -->
+          <div class="w-32 h-32">
+            <img src="https://static.readdy.ai/image/afb5b4676ce8c9df753727a4d20a6b33/c648439e8cf7c0486e684da0849eda52.png" 
+                 alt="Logo" class="w-full h-full object-contain">
+          </div>
+        </div>
+    
+        <!-- Navegación -->
+        <nav class="flex items-center justify-center space-x-8 text-lg font-medium mt-4">
+          <a href="inicio.html" class="nav-link active-link">Inicio</a>
+          <a href="karate_do.html" class="nav-link">Karate Do</a>
+          <a href="katas.html" class="nav-link">Katas</a>
+          <a href="Horario.html" class="nav-link">Horario</a>
+          <a href="Inscríbete.html" class="nav-link">Inscríbete</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-16">
+            <div class="relative h-96 rounded overflow-hidden mb-8">
+                <img src="https://readdy.ai/api/search-image?query=A%20martial%20arts%20dojo%20with%20students%20practicing%20karate%2C%20wearing%20white%20gis%20and%20colored%20belts.%20The%20image%20shows%20a%20traditional%20Japanese-style%20training%20hall%20with%20wooden%20floors%2C%20clean%20minimalist%20design.%20Some%20students%20are%20performing%20kata%20movements%20while%20others%20are%20practicing%20kumite%20%28sparring%29.%20The%20atmosphere%20is%20disciplined%20and%20focused.&width=1200&height=600&seq=1&orientation=landscape" alt="Karate Shotokan" class="w-full h-full object-cover object-top">
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent flex items-center">
+                    <div class="max-w-2xl px-8">
+                        <h1 class="text-5xl font-bold text-primary mb-4">Bienvenidos al Club Deportivo Kaizen Torrent</h1>
+                        <p class="text-xl mb-6">Escuela de Karate Shotokan con más de 15 años de experiencia formando campeones y personas íntegras a través del camino del karate.</p>
+                        <div class="flex space-x-4">
+                            <a href="Inscríbete.html" class="bg-primary text-black px-6 py-3 rounded-button font-semibold hover:bg-opacity-80 transition whitespace-nowrap">Inscríbete Ahora</a>
+                            <a href="karate_do.html" class="border border-primary text-primary px-6 py-3 rounded-button font-semibold hover:bg-primary/10 transition whitespace-nowrap">Conoce Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="user-profile" class="flex items-center space-x-4 hidden">
+            <div id="avatar" class="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold"></div>
+            <p id="user-email" class="text-lg text-black"></p>
+        </div>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Nuestro Dojo</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-lg mb-4">En el Club Deportivo Kaizen Torrent nos dedicamos a la enseñanza del Karate Shotokan, siguiendo la tradición y los principios establecidos por el Maestro Gichin Funakoshi.</p>
+                    <p class="text-lg mb-4">Nuestro enfoque se basa en el desarrollo integral de nuestros estudiantes, combinando el entrenamiento físico con la formación en valores como el respeto, la disciplina, la perseverancia y la humildad.</p>
+                    <p class="text-lg">Ofrecemos clases para todas las edades y niveles, desde principiantes hasta competidores de alto rendimiento, en un ambiente seguro y motivador.</p>
+                </div>
+                <div>
+                    <img src="https://readdy.ai/api/search-image?query=Interior%20of%20a%20traditional%20karate%20dojo%20with%20wooden%20floors%20and%20minimalist%20design.%20The%20dojo%20has%20large%20mirrors%20on%20one%20wall%2C%20training%20equipment%20neatly%20organized%2C%20and%20Japanese%20calligraphy%20on%20the%20walls.%20The%20space%20is%20clean%2C%20bright%2C%20and%20designed%20for%20martial%20arts%20practice%20with%20plenty%20of%20open%20floor%20space%20for%20training.&width=600&height=400&seq=2&orientation=landscape" alt="Nuestro Dojo" class="w-full h-full object-cover object-top rounded">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Próximos Eventos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-900 rounded p-6">
+                    <div class="text-primary text-lg font-semibold mb-2">28 de Abril, 2025</div>
+                    <h3 class="text-xl font-bold mb-3">Seminario de Kumite</h3>
+                    <p class="mb-4">Seminario especial con el Sensei Antonio Martínez, campeón nacional. Abierto a todos los niveles.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-400">16:00 - 19:00</span>
+                        <a href="#" class="text-primary hover:underline">Más información</a>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded p-6">
+                    <div class="text-primary text-lg font-semibold mb-2">15 de Mayo, 2025</div>
+                    <h3 class="text-xl font-bold mb-3">Examen de Cinturones</h3>
+                    <p class="mb-4">Evaluación para el ascenso de grado. Preparación especial durante las dos semanas previas.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-400">17:00 - 20:00</span>
+                        <a href="#" class="text-primary hover:underline">Más información</a>
+                    </div>
+                </div>
+                <div class="bg-gray-900 rounded p-6">
+                    <div class="text-primary text-lg font-semibold mb-2">5 de Junio, 2025</div>
+                    <h3 class="text-xl font-bold mb-3">Campeonato Regional</h3>
+                    <p class="mb-4">Participación en el Campeonato Regional de Karate. Categorías infantil, juvenil y adulto.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-400">09:00 - 18:00</span>
+                        <a href="#" class="text-primary hover:underline">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold text-primary mb-8 text-center">Nuestros Instructores</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Portrait%20of%20a%20middle-aged%20Spanish%20male%20karate%20instructor%20with%20short%20dark%20hair%2C%20wearing%20a%20traditional%20white%20gi%20and%20black%20belt.%20He%20has%20a%20confident%20but%20approachable%20expression%20showing%20years%20of%20martial%20arts%20experience.%20The%20image%20is%20professional%20and%20respectful%2C%20showing%20his%20face%20clearly%20with%20good%20lighting%20against%20a%20simple%20background.&width=300&height=300&seq=4&orientation=squarish" alt="Sensei Carlos Rodríguez" class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sensei Jose </h3>
+                    <p class="text-primary mb-2">4º Dan Shotokan</p>
+                    <p class="text-gray-300">Especialista en competición y entrenamiento de alto rendimiento, con más de 20 años de experiencia</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=Portrait%20of%20a%20young%20female%20Spanish%20karate%20instructor%20with%20long%20dark%20hair%20tied%20back%2C%20wearing%20a%20traditional%20white%20gi%20and%20black%20belt.%20She%20has%20a%20confident%20but%20friendly%20expression%20showing%20years%20of%20martial%20arts%20experience.%20The%20image%20is%20professional%20and%20respectful%2C%20showing%20her%20face%20clearly%20with%20good%20lighting%20against%20a%20simple%20background.&width=300&height=300&seq=5&orientation=squarish" alt="Sensei Laura Martínez" class="w-full h-full object-cover object-top"> 
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sensei Maria Jesus</h3>
+                    <p class="text-primary mb-2">4º Dan Shotokan</p>
+                    <p class="text-gray-300">Director técnico con más de 20 años de experiencia en la enseñanza del Karate Shotokan. </p>
+                </div>
+        </section>
+
+    </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 py-8 mt-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-4">Club Deportivo Kaizen Torrent</h3>
+                        <p class="mb-2">Calle Virgen del Puig Nº 11 </p>
+                        <p class="mb-2">Bajo Izquierda </p>
+                        <p class="mb-2">46900 Torrent, Valencia</p>
+                        <p class="mb-2">Teléfonos Senseis :<div>  - +34 646152782 </div>  <div> - +34 648604813 </div></p>
+                        <p>Email: cvs.conor@gmail.com <div> (De momento es el mío)  </div>  </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-4">Horario</h3>
+                        <p class="mb-2">Lunes a Viernes: 16:00 - 21:00</p>
+                        <p class="mb-2">Sábados: 10:00 - 13:00</p>
+                        <p>Domingos: Cerrado</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-4">Síguenos</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                                <i class="ri-facebook-fill ri-lg"></i>
+                            </a>
+                            <a href=" https://www.instagram.com/kaizentorrent?igsh=MWE4enZiMW83dTlqbw== " class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                                <i class="ri-instagram-fill ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                                <i class="ri-youtube-fill ri-lg"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                                <i class="ri-whatsapp-fill ri-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
+                    <p>© 2025 Club Deportivo Kaizen Torrent - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Esta función se puede ampliar para manejar la navegación entre páginas
+            // Por ahora, solo marca la página actual como activa
+            const currentPage = window.location.pathname;
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                if (currentPage.includes(link.getAttribute('href'))) {
+                    link.classList.add('active-link');
+                } else if (currentPage === '/' && link.getAttribute('href') === 'index.html') {
+                    link.classList.add('active-link');
+                } else {
+                    link.classList.remove('active-link');
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
