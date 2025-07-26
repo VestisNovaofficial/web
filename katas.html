@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katas - Club Deportivo Kaizen Torrent</title>
+<script src="https://cdn.tailwindcss.com/3.4.16">
+</script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { primary: "#57d8ff", secondary: "#ffffff" },
+      borderRadius: {
+        none: "0px",
+        sm: "4px",
+        DEFAULT: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        full: "9999px",
+        button: "8px",
+      },
+    },
+  },
+};
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+background-color: #000000;
+color: #ffffff;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-link {
+position: relative;
+transition: color 0.3s ease;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #57d8ff;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active-link {
+color: #57d8ff;
+}
+.active-link::after {
+width: 100%;
+}
+</style>
+</head>
+<body>
+<header class="w-full py-4 border-b border-gray-700">
+<div class="container mx-auto px-4">
+<div class="flex flex-col items-center justify-center">
+<div class="w-40 h-40 mb-4">
+<img src="https://static.readdy.ai/image/afb5b4676ce8c9df753727a4d20a6b33/c648439e8cf7c0486e684da0849eda52.png" alt="Club Deportivo Kaizen Torrent - Karate Shotokan" class="w-full h-full object-contain">
+</div>
+<nav class="flex items-center justify-center space-x-8 text-lg font-medium">
+<a href="inicio.html" class="nav-lin">Inicio</a>
+<a href="karate_do.html" class="nav-link">Karate Do</a>
+<a href="katas.html" class="nav-link active-link">Katas</a>
+<a href="Horario.html" class="nav-link">Horario</a>
+<a href="Inscríbete.html" class="nav-link">Inscríbete</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 py-8">
+<div class="relative h-[500px] rounded overflow-hidden mb-12">
+<img src="https://readdy.ai/api/search-image?query=A%20dramatic%20scene%20of%20a%20karate%20master%20performing%20a%20kata%20in%20a%20traditional%20dojo.%20The%20practitioner%20is%20wearing%20a%20crisp%20white%20gi%20and%20black%20belt%2C%20executing%20a%20powerful%20technique%20with%20perfect%20form.%20The%20lighting%20is%20dramatic%2C%20creating%20dynamic%20shadows%20that%20emphasize%20the%20movement.%20The%20background%20shows%20traditional%20Japanese%20architecture%20elements%20and%20training%20equipment.&width=1200&height=500&seq=6&orientation=landscape" alt="Katas Shotokan" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-black/50 flex items-center justify-center text-center">
+<div class="max-w-3xl px-8">
+<h1 class="text-6xl font-bold text-primary mb-6">Katas  </h1>
+<p class="text-xl text-gray-200">El Kata es el alma del karate: un combate contra sombras que revela técnica, mente y espíritu. Cada movimiento guarda siglos de tradición, entrenando no solo el cuerpo, sino también la disciplina, el ritmo y la esencia del Shotokan.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<div class="bg-gray-900 p-8 rounded-lg border border-gray-800 text-center">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-sword-line ri-3x text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-100 mb-2"> Katas Básicos </h3>
+<p class="text-gray-400">Los katas básicos para principiantes e intermedios</p>
+</div>
+<div class="bg-gray-900 p-8 rounded-lg border border-gray-800 text-center">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-fire-line ri-3x text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-100 mb-2">Tekki Series</h3>
+<p class="text-gray-400">Katas de nivel intermedio con énfasis en técnicas laterales</p>
+</div>
+<div class="bg-gray-900 p-8 rounded-lg border border-gray-800 text-center">
+<div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+<i class="ri-sparkling-line ri-3x text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-100 mb-2">Katas Superiores</h3>
+<p class="text-gray-400">Katas superiores para cinturones azules-marrones y avanzados</p>
+</div>
+</div>
+<div class="mb-16 bg-black p-8 rounded-lg">
+<h2 class="text-3xl font-bold text-[#57d8ff] mb-8">Katas Iniciación</h2>
+<div class="space-y-4">
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Taikyoku Shodan - Gran Extremo (primer nivel) - (大極 初段) - 20 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Taikyoku Nidan - Gran Extremo (segundo nivel) - (大極 二段) - -- pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Taikyoku Sandan - Gran Extremo (tercer nivel) - (大極 三段) - -- pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Taikyoku Yodan - Gran Extremo (cuarto nivel) - (大極 四段) - -- pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Taikyoku Godan - Gran Extremo (quinto nivel) - (大極 五段) - -- pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Taikyoku Rokudan - Gran Extremo (sexto nivel) - (大極 六段) - -- pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Ten No Kata Omote - (***) - -- pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Ten No Kata Ura - (***) - -- pasos</h3>
+</div>
+</div>
+</div>
+<div class="mb-16 bg-black p-8 rounded-lg">
+<h2 class="text-3xl font-bold text-[#57d8ff] mb-8">Katas Básicos</h2>
+<div class="space-y-4">
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Heian Shodan - Mente en paz (la primera) - (平安 初段) - 21 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Heian Nidan - Mente en paz (la segunda) - (平安 二段) - 26 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Heian Sandan - Mente en paz (la tercera) - (平安 三段) - 20 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Heian Yodan - Mente en paz (la cuarta) - (平安 四段) - 27 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Heian Godan - Mente en paz (la quinta) - (平安 五段) - 23 pasos</h3>
+</div>
+</div>
+</div>
+<div class="mb-16 bg-black p-8 rounded-lg">
+<h2 class="text-3xl font-bold text-[#57d8ff] mb-8">Katas Superiores</h2>
+<div class="space-y-4">
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Tekki Shodan - Jinete de Hierro (primer Tekki) - (鉄騎 初段) - 29 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Bassai Dai - Asalto a la Fortaleza (grande ó mayor) - (抜塞大) - 42 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Kanku Dai - Mirada al Cielo (grande ó mayor) - (観空大) - 65 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Empi - Vuelo de la Golondrina - (汪飛) - 37 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Jion - Templo de Jion - (慈恩) - 47 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Jitte - Diez Manos - (十手) - 26 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Hangetsu - Media Luna - (半月) - 41 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Tekki Nidan - Jinete de Hierro (segundo Tekki) - (鉄騎 二段) - 24 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Bassai Sho - Asalto a la Fortaleza (pequeño ó menor) - (抜塞小) - 28 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Kanku Sho - Mirada al Cielo (pequeño ó menor) - (観空小) - 39 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Gankaku - La Grulla sobre la Roca - (岩鶴) - 42 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Sochin - Fuerza Tranquila - (壯鎮) - 36 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Tekki Sandan - Jinete de Hierro (tercer Tekki) - (鉄騎 三段) - 36 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Chinte - Manos Misteriosas - (珍手) - 33 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Jiin - Amor y Sombra - (慈陰) - 35 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Nijushiho - Veinticuatro pasos - (二十四步) - 34 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Meikyo - Espejo Brillante - (明鏡) - 41 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Unsu - Manos de Nube - (雲手) - 53 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Wankan - Corona de Rey - (王冠) - 16 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Gojushiho Dai - Cincuenta y cuatro Pasos (mayor) - (五十四步大) - 62 pasos</h3>
+</div>
+<div class="kata-item">
+<h3 class="text-xl text-[#57d8ff]">Gojushiho Sho - Cincuenta y cuatro Pasos (menor) - (五十四步小) - 65 pasos</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 py-8 mt-16">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-xl font-bold text-primary mb-4">Club Deportivo Kaizen Torrent</h3>
+<p class="mb-2 text-gray-400">Calle Principal 123</p>
+<p class="mb-2 text-gray-400">46900 Torrent, Valencia</p>
+<p class="mb-2 text-gray-400">Teléfono: 123-456-789</p>
+<p class="text-gray-400">Email: info@kaizenkarate.es</p>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-4">Horario</h3>
+<p class="mb-2 text-gray-400">Lunes a Viernes: 16:00 - 21:00</p>
+<p class="mb-2 text-gray-400">Sábados: 10:00 - 13:00</p>
+<p class="text-gray-400">Domingos: Cerrado</p>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-4">Síguenos</h3>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 shadow-md rounded-full hover:bg-primary hover:text-white transition cursor-pointer text-gray-300">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href=" https://www.instagram.com/kaizentorrent?igsh=MWE4enZiMW83dTlqbw== " class="w-10 h-10 flex items-center justify-center bg-gray-800 shadow-md rounded-full hover:bg-primary hover:text-white transition cursor-pointer text-gray-300">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 shadow-md rounded-full hover:bg-primary hover:text-white transition cursor-pointer text-gray-300">
+<i class="ri-youtube-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 shadow-md rounded-full hover:bg-primary hover:text-white transition cursor-pointer text-gray-300">
+<i class="ri-whatsapp-fill ri-lg"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+<p>© 2025 Club Deportivo Kaizen Torrent - Todos los derechos reservados</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

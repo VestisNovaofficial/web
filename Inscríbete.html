@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo Kaizen Torrent - Karate Shotokan</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#57d8ff',secondary:'#ffffff'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #57d8ff;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .active-link {
+            color: #57d8ff;
+        }
+        .active-link::after {
+            width: 100%;
+        }
+
+        /* Efecto de destello katana */
+        .katana-glow {
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .katana-glow::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(87, 216, 255, 0.15), transparent 70%);
+            animation: katanaShine 6s linear infinite;
+            filter: blur(40px);
+            z-index: -1;
+        }
+
+        @keyframes katanaShine {
+            0% {
+                transform: rotate(0deg) translateX(0);
+                opacity: 0.6;
+            }
+            50% {
+                transform: rotate(180deg) translateX(10%);
+                opacity: 0.2;
+            }
+            100% {
+                transform: rotate(360deg) translateX(0);
+                opacity: 0.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="w-full py-4 border-b border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center">
+                <div class="w-40 h-40 mb-4">
+                    <img src="https://static.readdy.ai/image/afb5b4676ce8c9df753727a4d20a6b33/c648439e8cf7c0486e684da0849eda52.png" alt="Club Deportivo Kaizen Torrent - Karate Shotokan" class="w-full h-full object-contain">
+                </div>
+                <nav class="flex items-center justify-center space-x-8 text-lg font-medium">
+                    <a href="inicio.html" class="nav-link">Inicio</a>
+                    <a href="karate_do.html" class="nav-link">Karate Do</a>
+                    <a href="katas.html" class="nav-link">Katas</a>
+                    <a href="Horario.html" class="nav-link">Horario</a>
+                    <a href="Inscríbete.html" class="nav-link active-link">Inscríbete</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-16">
+            <h1 class="text-4xl font-bold text-primary text-center mb-4">Reserva tu plaza, ¡a qué estás esperando!</h1>
+            <p class="text-lg text-center mb-8">¡Abrimos en Septiembre! Si estás interesada/o no lo dudes, tenemos plazas limitadas. 
+                Más abajo encontrarás un cuadro para rellenar con tus datos, la actividad y la franja horaria. 
+                Si quieres, también puedes ponerte en contacto con nosotros por WhatsApp y resolveremos tus dudas.</p>
+            <p class="text-center mb-8">En la sección <a href="Horario.html" class="text-primary">Horarios</a> puedes ver qué actividades tenemos y a quién van dirigidas.</p>
+
+            <div class="bg-gray-900 p-6 rounded-md katana-glow">
+                <h2 class="text-3xl font-bold text-primary text-center mb-6">Formulario de Inscripción</h2>
+
+                <!-- Formulario de Inscripción con Formspree -->
+                
+                <form action="https://formspree.io/f/xblyyqpg" method="POST" class="space-y-6">
+                    <!-- Nombre -->
+                    <div class="flex flex-col">
+                        <label for="nombre" class="text-lg text-gray-300 mb-2">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="p-3 rounded bg-gray-800 text-white" placeholder="Introduce tu nombre" required>
+                    </div>
+                
+                    <!-- Apellidos -->
+                    <div class="flex flex-col">
+                        <label for="apellidos" class="text-lg text-gray-300 mb-2">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" class="p-3 rounded bg-gray-800 text-white" placeholder="Introduce tus apellidos" required>
+                    </div>
+                
+                    <!-- Correo Electrónico -->
+                    <div class="flex flex-col">
+                        <label for="email" class="text-lg text-gray-300 mb-2">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="p-3 rounded bg-gray-800 text-white" placeholder="Introduce tu correo electrónico" required>
+                    </div>
+
+                    <!-- Actividad: Acondicionamiento Físico (ACFT) -->
+<div class="flex flex-col">
+    <label class="text-lg text-gray-300 mb-2">¿Qué grupo de Acondicionamiento Físico (ACFT) te interesa?</label>
+    <select name="actividad_acft" class="p-3 rounded bg-gray-800 text-white" required>
+        <option value="">Selecciona una opción</option>
+        <option value="ACFT - Lun/Mie/Vie 9:30h-10:15h">ACFT - Lun/Mie/Vie 9:30h-10:15h</option>
+        <option value="ACFT - Lun/Mie/Vie 10:20h-11:05h">ACFT - Lun/Mie/Vie 10:20h-11:05h</option>
+        <option value="ACFT - Mar/Jue 9:00h-9:45h">ACFT - Mar/Jue 9:00h-9:45h</option>
+        <option value="ACFT - Mar/Jue 9:50h-10:35h">ACFT - Mar/Jue 9:50h-10:35h</option>
+        <option value="ACFT - Mar/Jue/Vie 17:00h-17:45h">ACFT - Mar/Jue/Vie 17:00h-17:45h</option>
+        <option value="Ninguna">Ninguna</option>
+    </select>
+        </div>
+
+            <!-- Actividad: Karate (KRT) -->
+            <div class="flex flex-col">
+                <label class="text-lg text-gray-300 mb-2">¿Qué grupo de Karate (KRT) te interesa?</label>
+                <select name="actividad_krt" class="p-3 rounded bg-gray-800 text-white" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="KRT Pre-Karate (5-7) - Lun/Mie 17:00h-17:50h">KRT Pre-Karate (5-7) - Lun/Mie 17:00h-17:50h</option>
+                    <option value="KRT Infantil (8-10) - Lun/Mie 18:00h-18:50h">KRT Infantil (8-10) - Lun/Mie 18:00h-18:50h</option>
+                    <option value="KRT Infantil (8-10) - Mar/Jue 18:00h-18:50h">KRT Infantil (8-10) - Mar/Jue 18:00h-18:50h</option>
+                    <option value="KRT Juvenil (11-14) - Lun/Mie/Vie 19:00h-19:50h">KRT Juvenil (11-14) - Lun/Mie/Vie 19:00h-19:50h</option>
+                    <option value="KRT Adultos (15+) - Lun/Mie/Vie 20:00h-21:00h">KRT Adultos (15+) - Lun/Mie/Vie 20:00h-21:00h</option>
+                    <option value="KRT Adultos (15+) - Mar/Jue 20:00h-21:00h">KRT Adultos (15+) - Mar/Jue 20:00h-21:00h</option>
+                    <option value="Ninguna">Ninguna</option>
+                </select>
+            </div>
+
+            <!-- Actividad: Defensa Personal (DP) -->
+            <div class="flex flex-col">
+                <label class="text-lg text-gray-300 mb-2">¿Te interesa Defensa Personal (DP / Goshin)?</label>
+                <select name="actividad_dp" class="p-3 rounded bg-gray-800 text-white" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="DP - Mar/Jue 19:00h-19:50h">DP - Mar/Jue 19:00h-19:50h</option>
+                    <option value="Ninguna">Ninguna</option>
+                </select>
+            </div>
+                
+                    <!-- Dudas / Comentarios -->
+                    <div class="flex flex-col">
+                        <label for="mensaje" class="text-lg text-gray-300 mb-2">¿Tienes alguna duda o comentario?</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="p-3 rounded bg-gray-800 text-white" placeholder="Escribe aquí..."></textarea>
+                    </div>
+                
+                    <!-- Botón de Enviar -->
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-primary text-black px-8 py-3 rounded font-semibold hover:bg-opacity-80 transition">Enviar Inscripción</button>
+                    </div>
+                </form>
+                
+                <!-- Enlace de WhatsApp -->
+                <p class="text-center text-gray-300 mt-8">¿Tienes dudas? <a href="https://wa.me/123456789" target="_blank" class="text-primary">¡Contáctanos por WhatsApp!</a></p> 
+
+                <!-- Enlace de WhatsApp -->
+                <p class="text-center text-gray-300 mt-8">¿Tienes dudas? <a href="https://wa.me/123456789" target="_blank" class="text-primary">¡Contáctanos por WhatsApp!</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Club Deportivo Kaizen Torrent</h3>
+                    <p class="mb-2">Calle Principal 123</p>
+                    <p class="mb-2">46900 Torrent, Valencia</p>
+                    <p class="mb-2">Teléfono: 123-456-789</p>
+                    <p>Email: info@kaizenkarate.es</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Horario</h3>
+                    <p class="mb-2">Lunes a Viernes: 16:00 - 21:00</p>
+                    <p class="mb-2">Sábados: 10:00 - 13:00</p>
+                    <p>Domingos: Cerrado</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                            <i class="ri-facebook-fill ri-lg"></i>
+                        </a>
+                        <a href=" https://www.instagram.com/kaizentorrent?igsh=MWE4enZiMW83dTlqbw== " class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                            <i class="ri-instagram-fill ri-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                            <i class="ri-youtube-fill ri-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-black transition">
+                            <i class="ri-whatsapp-fill ri-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
+                <p>© 2025 Club Deportivo Kaizen Torrent - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
